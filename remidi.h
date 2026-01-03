@@ -26,6 +26,6 @@ void createList(list &L);
 address createNewElm(infotype x);
 void tambahData(list &L, infotype x);
 address panenTerbanyak(list L);
-void panenBulanan(list L, string bulan);
+void panenBulanan(list L);
 
 #endif

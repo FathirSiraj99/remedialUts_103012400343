@@ -37,20 +37,41 @@ address panenTerbanyak(list L) {
     return max;
 }
 
-void panenBulanan(list L, string bulan) {
+void panenBulanan(list L) {
     address p = L.first;
-    bool ketemu = false;
+    address q;
+    bool sudahAda;
+
+    if (p == NULL) {
+        cout << "Tidak ada data panen" << endl;
+        return;
+    }
 
     while (p != NULL) {
-        if (p->info.bulanPanen == bulan) {
-            cout << p->info.namaTanaman << " ";
-            ketemu = true;
+        sudahAda = false;
+
+        q = L.first;
+        while (q != p) {
+            if (q->info.bulanPanen == p->info.bulanPanen) {
+                sudahAda = true;
+            }
+            q = q->next;
         }
+
+        if (!sudahAda) {
+            cout << p->info.bulanPanen << " : ";
+
+            q = L.first;
+            while (q != NULL) {
+                if (q->info.bulanPanen == p->info.bulanPanen) {
+                    cout << q->info.namaTanaman << " ";
+                }
+                q = q->next;
+            }
+            cout << endl;
+        }
+
         p = p->next;
     }
-
-    if (!ketemu) {
-        cout << "Tidak ada data panen";
-    }
-    cout << endl;
 }
+

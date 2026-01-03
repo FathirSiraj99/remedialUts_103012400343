@@ -41,8 +41,8 @@ int main() {
              << max->info.jumlahPanen << " kg)" << endl;
     }
 
-    cout << "Panen bulan Maret: ";
-    panenBulanan(L, "Maret");
+    cout << "Data panen" << endl;
+    panenBulanan(L);
 
     return 0;
 }
