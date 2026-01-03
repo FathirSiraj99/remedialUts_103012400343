@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1767451611 source:d:\telkomuniversitydata\semester3\strukturdata\remedial\remedial\main.cpp
+1767451871 source:d:\telkomuniversitydata\semester3\strukturdata\remedial\remedial\main.cpp
 	<iostream>
 	"remidi.h"
 
 1767451776 d:\telkomuniversitydata\semester3\strukturdata\remedial\remedial\remidi.h
 
-1767451584 source:d:\telkomuniversitydata\semester3\strukturdata\remedial\remedial\remidi.cpp
+1767451927 source:d:\telkomuniversitydata\semester3\strukturdata\remedial\remedial\remidi.cpp
 	<iostream>
 	"remidi.h"
 
